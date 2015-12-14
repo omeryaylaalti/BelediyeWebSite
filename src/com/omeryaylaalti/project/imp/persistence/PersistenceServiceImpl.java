@@ -7,8 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.omeryaylaalti.project.HibernateUtil.HibernateUtil;
-import com.omeryaylaalti.project.persistence.PersistenceService;
+import com.omeryaylaalti.project.hibernate.util.HibernateUtil;
+import com.omeryaylaalti.project.service.PersistenceService;
 
 public class PersistenceServiceImpl implements PersistenceService
 {
@@ -112,8 +112,7 @@ public class PersistenceServiceImpl implements PersistenceService
  
      private Session openSession() 
     {
-        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateUtil.openSession();
         return session;
     }
 

@@ -55,8 +55,8 @@ div #label {
 						</button></a> <a href="https://twitter.com/omer_y34" target="blank"><button
 							type="button" class="btn  btn-info btn-twitter">
 							<i class="fa fa-twitter"></i> Twitter
-						</button></a> <a href="UyelikFormu.jsp" class="btn btn-success "><span
-						class="glyphicon glyphicon-user"></span>Üye Ol</a> <br> <br>
+						</button></a> <a href="login.jsp" class="btn btn-success "><span
+						class="glyphicon glyphicon-user"></span>ONLİNE İŞLEMLER</a> <br> <br>
 					
 					<!-- <form method="GET" action="GirisYapServlet" class="form-inline"
 						role="form">
