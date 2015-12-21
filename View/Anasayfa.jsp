@@ -26,11 +26,6 @@ div #giris {
 	text-align: right
 }
 
-s
-div #label {
-	background-position: top;
-	background-color: #ffff;
-}
 </style>
 </head>
 <body>
@@ -56,23 +51,8 @@ div #label {
 							type="button" class="btn  btn-info btn-twitter">
 							<i class="fa fa-twitter"></i> Twitter
 						</button></a> <a href="login.jsp" class="btn btn-success "><span
-						class="glyphicon glyphicon-user"></span>ONLİNE İŞLEMLER</a> <br> <br>
-					
-					<!-- <form method="GET" action="GirisYapServlet" class="form-inline"
-						role="form">
-						<div class="form-group">
-							<label class="sr-only" for="exampleInputEmail2">Email
-								address</label> <input type="email" name="email" class="form-control"
-								id="exampleInputEmail2" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="exampleInputPassword2">Password</label>
-							<input type="password" name="password" class="form-control"
-								id="exampleInputPassword2" placeholder="Password">
-						</div>
-						<button type="submit" class="btn btn-default">Giriş Yap</button>
-					</form> -->
-
+						class="glyphicon glyphicon-user"></span>ONLİNE İŞLEMLER</a> <br>
+					<br>
 				</div>
 			</form>
 		</div>
@@ -80,14 +60,14 @@ div #label {
 
 	<br>
 	<div class="container">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" id="renk">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">SAÇAK BELDESİ</a>
+				<a class="navbar-brand" href="Anasayfa.jsp">SAÇAK BELDESİ</a>
 			</div>
 			<div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">ANASAYFA</a></li>
+				<ul class="nav navbar-nav" >
+					<li class="active"><a href="Anasayfa.jsp">ANASAYFA</a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
 						data-toggle="dropdown" href="#">BAŞKAN <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -97,10 +77,30 @@ div #label {
 							<li><a href="#">Başkana Soru Sor</a></li>
 							<li><a href="#">Başkanla Fotoğraflarım</a></li>
 						</ul></li>
-					<li><a href="kurumsal.jsp">KURUMSAL</a></li>
-					<li><a href="#">HİZMETLERİMİZ</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">KURUMSAL <span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Başkan Yardımcıları</a></li>
+							<li><a href="#">Meclis Üyeleri</a></li>
+							<li><a href="#">Teşkilat Şeması</a></li>
+							<li><a href="#">Birimler</a></li>
+						</ul></li>
+
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">HİZMETLERİMİZ <span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">İşyeri Ruhsatı</a></li>
+							<li><a href="#">Zabıta Hizmetleri</a></li>
+							<li><a href="#">Nikah&Düğün Hizmetleri</a></li>
+							<li><a href="#">Mezarlık Hizmetleri</a></li>
+							<li><a href="#">Çevre Düzenleme & Şehircilik</a></li>
+						</ul></li>
 					<li><a href="#">PROJELERİMİZ</a></li>
 					<li><a href="#">HABERLER</a></li>
+					<li><a href="#">İLETİŞİM</a></li>
+
 				</ul>
 
 			</div>
@@ -176,8 +176,8 @@ div #label {
 						id="edit-profile">
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Köy İçi Resimler</strong>
 								</p>
@@ -187,8 +187,8 @@ div #label {
 						</div>
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Mezarlık Resimleri</strong>
 								</p>
@@ -198,8 +198,8 @@ div #label {
 						</div>
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Mahallemizin Resimleri</strong>
 								</p>
@@ -209,8 +209,8 @@ div #label {
 						</div>
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Belediye Resimleri</strong>
 								</p>
@@ -220,8 +220,8 @@ div #label {
 						</div>
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Hizmetlerimiz</strong>
 								</p>
@@ -231,8 +231,8 @@ div #label {
 						</div>
 						<div class="col-sm-4">
 							<div class="thumbnail">
-								<img src="assets/img/belediye1.jpg" alt="San Francisco" width="400"
-									height="300">
+								<img src="assets/img/belediye1.jpg" alt="San Francisco"
+									width="400" height="300">
 								<p>
 									<strong>Manzara Resimleri</strong>
 								</p>
