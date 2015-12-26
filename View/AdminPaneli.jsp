@@ -55,7 +55,7 @@
 					musunuz?</p>
 				<p class="text-center">
 					<button class="btn btn-danger md-close">Hayır!</button>
-					<a href="login.html" class="btn btn-success md-close">Evet,
+					<a href="login.jsp" class="btn btn-success md-close">Evet,
 						İstiyorum</a>
 				</p>
 			</div>
@@ -95,14 +95,11 @@
 									Çalışanları</a></li>
 							<li><a href=""><i class="fa fa-edit"></i><i
 									class="fa fa-angle-double-down i-right"></i>Haberleri Görüntüle</a></li>
-							<li class="active"><a href="tables.html"><i
-									class="fa fa-table"></i> Üye Tablosu</a></li>
-							<li><a href=""><i class="fa fa-smile-o"></i><i
+							<li class="active"><a href="adminKullaniciGoruntule.jsp"><i
+									class="fa fa-table"></i>Kullanıcı İşlemleri</a></li>
+							<li><a href="adminNikahRezervasyonGoruntule.jsp"><i
+									class="fa fa-smile-o"></i><i
 									class="fa fa-angle-double-down i-right"></i>Nikah İşlemleri</a></li>
-							<li><a href="message.html"><i class="fa fa-envelope"></i>Mesajları
-									Görüntüle <span
-									class="label label-danger new-circle animated double shake">35</span></a></li>
-
 						</ul>
 						<div class="clear"></div>
 					</div>
@@ -617,12 +614,12 @@
 
 
 
+			</div>
+
 		</div>
 
-	</div>
-
-	<footer> © 2015 Bu panel <a href="">Ömer Yaylaaltı</a>
-	tarafından tasarlanmıştır. Samsun, Türkiye </footer>
+		<footer> © 2015 Bu panel <a href="">Ömer Yaylaaltı</a>
+		tarafından tasarlanmıştır. Samsun, Türkiye </footer>
 
 	</div>
 	<!-- ============================================================== -->

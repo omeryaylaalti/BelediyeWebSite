@@ -13,7 +13,7 @@ import com.omeryaylaalti.project.service.PersistenceService;
 public class PersistenceServiceImpl implements PersistenceService
 {
 	@Override
-    public <T> T select(Class<T> clazz, Long id) 
+    public <T> T select(Class<T> clazz, int id) 
     {
         Session session = openSession();
          

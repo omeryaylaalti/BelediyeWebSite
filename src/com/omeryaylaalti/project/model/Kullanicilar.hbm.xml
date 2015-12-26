@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Dec 21, 2015 2:35:28 AM by Hibernate Tools 3.5.0.Final -->
+<!-- Generated Dec 26, 2015 2:48:27 AM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.omeryaylaalti.project.model.Kullanicilar" table="KULLANICILAR">
         <id name="id" type="java.lang.Long">

@@ -13,7 +13,7 @@ public class Kullanicilar {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
 	@Id
-	private Long id;
+	private int id;
 
 	String username;
 	String email;
@@ -23,11 +23,11 @@ public class Kullanicilar {
 		return String.format("ID:%d Name: %s", id, username);
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
