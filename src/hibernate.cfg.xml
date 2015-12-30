@@ -13,10 +13,13 @@
   <property name="hbm2ddl.auto">update</property>
   <property name="show_sql">true</property>
   <property name="hibernate.show_sql">true</property>
-  <property name="hibernate.current_session_context_class">thread</property>  
+  <property name="hibernate.current_session_context_class">thread</property>
   <mapping class="com.omeryaylaalti.project.model.Kullanicilar"/>
   <mapping class="com.omeryaylaalti.project.model.NikahRandevu"/>
   <mapping class="com.omeryaylaalti.project.model.Yetki"/>
   <mapping class="com.omeryaylaalti.project.model.Users"/>
+  <mapping class="com.omeryaylaalti.project.model.BelediyeBirim"/>
+  <mapping class="com.omeryaylaalti.project.model.BelediyeCalisanlar"/>
+  <mapping class="com.omeryaylaalti.project.model.ZiyaretciMesajlar"/>
  </session-factory>
 </hibernate-configuration>

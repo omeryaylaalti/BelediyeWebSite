@@ -87,19 +87,27 @@
 						<ul>
 							<li><a href="AdminPaneli.jsp"><i class="fa fa-home"></i>
 									Anasayfa</a></li>
-							<li><a href="belediyeTeskilat.jsp"><i class="fa fa-bug"></i><i
-									class="fa fa-angle-double-down i-right"></i>Belediye Teşkilatı</a>
+							<li><a href="belediyeBirimler.jsp"><i class="fa fa-bug"></i><i
+									class="fa fa-angle-double-down i-right"></i>Belediye Birimleri</a>
 							</li>
-							<li><a href=""><i class="fa fa-bug"></i><i
+							<li><a href="belediyeCalısanlar.jsp"><i
+									class="fa fa-bug"></i><i
 									class="fa fa-angle-double-down i-right"></i>Belediye
 									Çalışanları</a></li>
-							<li><a href=""><i class="fa fa-edit"></i><i
+							<li><a href="#"><i class="fa fa-edit"></i><i
 									class="fa fa-angle-double-down i-right"></i>Haberleri Görüntüle</a></li>
 							<li class="active"><a href="adminKullaniciGoruntule.jsp"><i
 									class="fa fa-table"></i>Kullanıcı İşlemleri</a></li>
 							<li><a href="adminNikahRezervasyonGoruntule.jsp"><i
 									class="fa fa-smile-o"></i><i
 									class="fa fa-angle-double-down i-right"></i>Nikah İşlemleri</a></li>
+							<li><a href="#"><i class="fa fa-smile-o"></i><i
+									class="fa fa-angle-double-down i-right"></i>Düğün İşlemleri</a></li>
+							<li><a href="adminGelenMesajlar.jsp"><i
+									class="fa fa-bug"></i><i
+									class="fa fa-angle-double-down i-right"></i>Ziyaretci Mesajlari</a></li>
+							<li><a href="#"><i class="fa fa-bug"></i><i
+									class="fa fa-angle-double-down i-right"></i>Dilek ve Şikayetler</a></li>
 						</ul>
 						<div class="clear"></div>
 					</div>
