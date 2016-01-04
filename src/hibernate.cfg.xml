@@ -21,5 +21,8 @@
   <mapping class="com.omeryaylaalti.project.model.BelediyeBirim"/>
   <mapping class="com.omeryaylaalti.project.model.BelediyeCalisanlar"/>
   <mapping class="com.omeryaylaalti.project.model.ZiyaretciMesajlar"/>
+  <mapping class="com.omeryaylaalti.project.model.HaberEkle"/>
+  <mapping class="com.omeryaylaalti.project.model.DugunSalonuSecimi"/>
+  <mapping class="com.omeryaylaalti.project.model.DilekveSikayetler"/>
  </session-factory>
 </hibernate-configuration>
