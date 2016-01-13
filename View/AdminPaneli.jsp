@@ -28,7 +28,21 @@
 	Integer calisanSayi = calisandao.calisanSayi();
 	request.setAttribute("calisan", calisanSayi);
 %>
-
+<%
+	DugunSalonuSecimDAO dugundao = new DugunSalonuSecimDAO();
+	Integer dugunsayi = dugundao.dugunSayi();
+	request.setAttribute("dugun", dugunsayi);
+%>
+<%
+	DilekveSikayetlerDAO dilekdao = new DilekveSikayetlerDAO();
+	Integer sikayetsayi = dilekdao.sikayetSayi();
+	request.setAttribute("sikayet", sikayetsayi);
+%>
+<%
+	HaberEkleDAO haberdao = new HaberEkleDAO();
+	Integer habersayi = haberdao.haberSayi();
+	request.setAttribute("haber", habersayi);
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -130,12 +144,14 @@
 							<li><a href="adminNikahRezervasyonGoruntule.jsp"><i
 									class="fa fa-smile-o"></i><i
 									class="fa fa-angle-double-down i-right"></i>Nikah İşlemleri</a></li>
-							<li><a href="adminDugunRandevuGoruntule.jsp"><i class="fa fa-smile-o"></i><i
+							<li><a href="adminDugunRandevuGoruntule.jsp"><i
+									class="fa fa-smile-o"></i><i
 									class="fa fa-angle-double-down i-right"></i>Düğün İşlemleri</a></li>
 							<li><a href="adminGelenMesajlar.jsp"><i
 									class="fa fa-bug"></i><i
 									class="fa fa-angle-double-down i-right"></i>Ziyaretci Mesajlari</a></li>
-							<li><a href="adminDilekveSikayetGoruntule.jsp"><i class="fa fa-bug"></i><i
+							<li><a href="adminDilekveSikayetler.jsp"><i
+									class="fa fa-bug"></i><i
 									class="fa fa-angle-double-down i-right"></i>Dilek ve Şikayetler</a></li>
 						</ul>
 						<div class="clear"></div>
@@ -222,7 +238,6 @@
 						</div>
 						<p class="text-center">Kullanıcı Eklenebilir.</p>
 					</div>
-
 				</div>
 
 				<div class="col-sm-3 col-xs-6">
@@ -255,6 +270,32 @@
 						<p class="text-center">Mesajlarınıza bakınız.</p>
 					</div>
 				</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="box-info animated bounceIn">
+						<div class="icon-box">
+							<span class="fa-stack"> <i
+								class="fa fa-circle fa-stack-2x success"></i> <i
+								class="fa fa-flag fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="text-box">
+							<h3>${haber}</h3>
+							<p>Haberler</p>
+						</div>
+						<div class="clear"></div>
+						<div class="knob-wrapper knob-chart with-button">
+							<a class="knob-inner"> <span class="percentage easyPieChart"
+								data-percent="80"
+								style="width: 120px; height: 120px; line-height: 120px;">
+									<span>30%</span> <canvas width="120" height="120"></canvas>
+							</span>
+							</a> <a class="btn btn-large btn-danger"
+								href="adminHaberleriGoruntule.jsp">${haber}</a>
+						</div>
+						<p class="text-center">Haber Eklenebilir.</p>
+					</div>
+
+				</div>
 
 				<div class="col-sm-3 col-xs-6">
 					<div class="box-info animated bounceIn">
@@ -284,6 +325,58 @@
 						</div>
 						<p class="text-center">Birim tablosuna bakınız..</p>
 					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="box-info animated bounceIn">
+						<div class="icon-box">
+							<span class="fa-stack"> <i
+								class="fa fa-circle fa-stack-2x success"></i> <i
+								class="fa fa-flag fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="text-box">
+							<h3>${sikayet}</h3>
+							<p>Dilek ve Şikayetler</p>
+						</div>
+						<div class="clear"></div>
+						<div class="knob-wrapper knob-chart with-button">
+							<a class="knob-inner"> <span class="percentage easyPieChart"
+								data-percent="80"
+								style="width: 120px; height: 120px; line-height: 120px;">
+									<span>40%</span> <canvas width="120" height="120"></canvas>
+							</span>
+							</a> <a class="btn btn-large btn-danger"
+								href="adminDilekveSikayetler.jsp">${sikayet}</a>
+						</div>
+						<p class="text-center">Dilek ve Şikayet Eklenebilir.</p>
+					</div>
+
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="box-info animated bounceIn">
+						<div class="icon-box">
+							<span class="fa-stack"> <i
+								class="fa fa-circle fa-stack-2x success"></i> <i
+								class="fa fa-flag fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="text-box">
+							<h3>${dugun}</h3>
+							<p>Düğün Hizmeti</p>
+						</div>
+						<div class="clear"></div>
+						<div class="knob-wrapper knob-chart with-button">
+							<a class="knob-inner"> <span class="percentage easyPieChart"
+								data-percent="80"
+								style="width: 120px; height: 120px; line-height: 120px;">
+									<span>60%</span> <canvas width="120" height="120"></canvas>
+							</span>
+							</a> <a class="btn btn-large btn-danger"
+								href="adminDugunRandevuGoruntule.jsp">${dugun}</a>
+						</div>
+						<p class="text-center">Rezervasyon Eklenebilir.</p>
+					</div>
+
 				</div>
 
 				<div class="col-sm-3 col-xs-6">
@@ -517,23 +610,23 @@
 				</div>
 
 				<div id="quick-post" class="collapse in">
-					<form role="form">
+					<form role="form" action="adminGonder">
 						<div class="form-group">
 							<p>Lütfen bilgi almak için birşeyler yazın.</p>
-							<input type="text" class="form-control"
+							<input type="text" class="form-control" name="hataname"
 								placeholder="Type someting here">
 						</div>
 						<div class="form-group">
-							<select class="form-control selectpicker" style="display: none;">
+							<select class="form-control selectpicker" style="display: none;" name ="hatasubject">
 								<option value="" selected="">Konu Kategorisi Seçiniz</option>
-								<option value="">Mobil Teknoloji</option>
-								<option value="">Web Programlama</option>
-								<option value="">Sistem Altyapısı</option>
+								<option value="Mobil Teknoloji">Mobil Teknoloji</option>
+								<option value="Web Programlama">Web Programlama</option>
+								<option value="Sistem Altyapısı">Sistem Altyapısı</option>
 							</select>
 
 						</div>
 						<div class="form-group">
-							<textarea class="form-control"
+							<textarea class="form-control" name="hatacomment"
 								style="height: 140px; resize: none"></textarea>
 						</div>
 						<div class="row">
