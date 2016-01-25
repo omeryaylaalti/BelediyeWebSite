@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 2:57:29 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.omeryaylaalti.project.model.BelediyeCalisanlar" table="BELEDIYECALISANLAR">
+        <id name="calisanid" type="int">
+            <column name="CALISANID" />
+            <generator class="assigned" />
+        </id>
+        <property name="calisanname" type="java.lang.String">
+            <column name="CALISANNAME" />
+        </property>
+        <property name="calisanbirim" type="java.lang.String">
+            <column name="CALISANBIRIM" />
+        </property>
+        <property name="calisanil" type="java.lang.String">
+            <column name="CALISANIL" />
+        </property>
+        <property name="calisantc" type="java.lang.String">
+            <column name="CALISANTC" />
+        </property>
+        <property name="calisancomment" type="java.lang.String">
+            <column name="CALISANCOMMENT" />
+        </property>
+    </class>
+</hibernate-mapping>

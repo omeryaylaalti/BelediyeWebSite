@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 2:57:29 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.omeryaylaalti.project.model.HaberEkle" table="HABEREKLE">
+        <id name="haberId" type="int">
+            <column name="HABERID" />
+            <generator class="assigned" />
+        </id>
+        <primitive-array name="haberPhoto" table="HABEREKLE">
+            <key>
+                <column name="HABERID" />
+            </key>
+            <index></index>
+            <element type="byte">
+                <column name="HABERPHOTO" />
+            </element>
+        </primitive-array>
+        <property name="haberDate" type="java.util.Date">
+            <column name="HABERDATE" />
+        </property>
+        <property name="haberName" type="java.lang.String">
+            <column name="HABERNAME" />
+        </property>
+        <property name="haberComment" type="java.lang.String">
+            <column name="HABERCOMMENT" />
+        </property>
+    </class>
+</hibernate-mapping>
